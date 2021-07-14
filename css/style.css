@@ -30,6 +30,10 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
+.escher_sphere{
+	width:511px;
+	height:512px;
+}
 .escher_sphere_caption {
 	text-align: center;
 	font-family: Georgia;
