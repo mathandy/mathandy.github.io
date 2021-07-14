@@ -12,6 +12,9 @@ p{
 	margin:0;
 	font-size:14px;
 }
+figure{
+	display:table;
+}
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Oswald', sans-serif;
 	font-weight:100;
@@ -908,7 +911,7 @@ ul.footer-grid-list li span{
     display: inline-block;
 }
 .panel_text {
-    font-size: 14px;
+    font-size: 1em;
     color: #999;
     line-height: 1.8em;
 }
@@ -2446,29 +2449,11 @@ p.fugiat{
 	.services-grids {
 		margin: 2em 0 0;
 	}
-	.services-grids-left-grid1-pos span {
-		background: url(../images/img-sp.png) no-repeat 0px 0px;
-		background-size: 515%;
-		width: 80px;
-		height: 80px;
-	}
 	.services-grids-left, .services-grids-right {
 		margin-right: 3em;
 	}
-	.services-grids-left-grid3-pos span {
-		background: url(../images/img-sp.png) no-repeat -195px 0px;
-		width: 80px;
-		height: 80px;
-		background-size: 515%;
-	}
 	.services-grids-left-grid1-pos, .services-grids-left-grid3-pos {
 		left: 103%;
-	}
-	.services-grids-left-grid2-pos span {
-		background: url(../images/img-sp.png) no-repeat -90px 0px;
-		background-size: 515%;
-		width: 80px;
-		height: 80px;
 	}
 	.services-grids-left-grid2-pos {
 		left:103.5%;
