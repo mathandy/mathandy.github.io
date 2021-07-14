@@ -14,6 +14,9 @@ p{
 }
 figure{
 	display:table;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Oswald', sans-serif;
@@ -26,6 +29,21 @@ ul,label{
 }
 body a:hover{
 	text-decoration:none;
+}
+.escher_sphere_caption {
+	text-align: center;
+	font-family: Georgia;
+	font-size:1em;
+}
+.escher_sphere_caption_style_photo_line {
+	font-size: 1em;
+}
+.dad-website {
+	color:#c0c0c0;
+}
+.contact {
+	font-family:Roboto;
+	font-size:18px;
 }
 /*-- header --*/
 .navbar-default {
@@ -1690,17 +1708,6 @@ p.fugiat{
 .related-post-right ul li span{
 	left:-.5em;
 	color:#6BC676;
-}
-
-.esher_sphere_caption {
-	text-align: center;
-	font-family: Georgia;
-}
-.esher_sphere_caption_style_photo_line {
-    font-size: 12px;
-}
-.dad-website {
-	color:#c0c0c0;
 }
 /*-- //single --*/
 /*-----start-responsive-design------*/
