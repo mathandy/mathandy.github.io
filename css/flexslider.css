@@ -37,7 +37,7 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {
-	border: 0px;
+	border: 0;
 	position: relative;
 	transform: scale(1);
 }
@@ -67,7 +67,7 @@ html[xmlns] .slides {display: block;}
 	background-position: -49px -308px;
     right: 90%;
 }
-.flex-direction-nav .flex-prev {left: 0%;}
+.flex-direction-nav .flex-prev {left: 0;}
 .flexslider:hover .flex-next {opacity: 1;}
 .flexslider:hover .flex-prev {opacity: 1;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
@@ -77,7 +77,7 @@ html[xmlns] .slides {display: block;}
 	display: none;
     position: absolute;
     right: 0;
-    margin-left: 0px;
+    margin-left: 0;
     bottom: 0;
 }
 .flex-control-nav li {margin: 0 6px; display: inline-block; transform: scale(1); *display: inline;}
@@ -131,7 +131,7 @@ html[xmlns] .slides {display: block;}
 }
 @media screen and (max-width: 480px) {
 	section.slider {
-		padding-top: 0%;
+		padding-top: 0;
 	}
 	.flexslider {
 		padding:0;
@@ -152,7 +152,7 @@ html[xmlns] .slides {display: block;}
 }
 @media screen and (max-width: 320px) {
 	section.slider {
-		padding-top: 0%;
+		padding-top: 0;
 	}
 	.flex-direction-nav a {
 		bottom: -6%;
