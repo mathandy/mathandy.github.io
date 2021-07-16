@@ -92,15 +92,14 @@ body a:hover{
 /*-- nav-hover-effect --*/
 .menu__list {
 	position: relative;
-	display: inline-block;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+	display: block;
+    -webkit-flex-wrap: inherit;
+    flex-wrap: inherit;
     list-style: none;
 }
 
 .menu__item {
-	white-space:nowrap;
-	display: inline;
+	display: block;
 	margin: 1em 0;
 }
 
