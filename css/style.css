@@ -35,7 +35,7 @@ body a:hover{
 }
 .escher_sphere_caption {
 	text-align: center;
-	font-family: Georgia;
+	font-family: Georgia, serif;
 	font-size:1em;
 }
 .escher_sphere_caption_style_photo_line {
@@ -45,7 +45,7 @@ body a:hover{
 	color:#c0c0c0;
 }
 .contact {
-	font-family:Roboto;
+	font-family: Roboto, serif;
 	font-size:18px;
 }
 /*-- header --*/
