@@ -30,16 +30,19 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
-#escher_sphere{
-	height:100%;
-}
-.escher_sphere_caption {
+p.escher {
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size:1em;
+	margin-right: 5%;
+	margin-left: 5%;
+
+	align-content: center;
 }
-.escher_sphere_caption_style_photo_line {
-	font-size: 1em;
+img.escher {
+
+	align-self: center;
+	width:100%;
 }
 .dad-website {
 	color:#c0c0c0;
