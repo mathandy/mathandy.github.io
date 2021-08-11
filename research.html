@@ -7,37 +7,52 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>A. Port's Research</title>
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Andrew Port, deep computer vision, sensory substitution" />
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
+	<title>A. Port's Research</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Andrew Port, deep computer vision, sensory substitution" />
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
 
-<!-- //js -->
-<!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
-<!-- //animation-effect -->
-<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		new WOW().init();
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	<!-- //js -->
+	<!-- animation-effect -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<script src="js/wow.min.js"></script>
+	<!-- //animation-effect -->
+	<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		// jQuery(document).ready(function($) {
+		// 	new WOW().init();
+		// 	$(".scroll").click(function(event){
+		// 		event.preventDefault();
+		// 		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		// 	});
+		// });
+		$(document).ready(function($) {
+			new WOW().init();
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+
+			// open relevant accordion item if anchor is included in url
+			let url = window.location.href;
+			let anchor_index = url.indexOf("#");
+			if (anchor_index !== -1) {
+				$(url.substring(anchor_index)).children().first().click()
+			}
 		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
+	</script>
+	<!-- start-smoth-scrolling -->
 
 </head>
 	
@@ -106,9 +121,10 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 									Related papers, patents, and awards
 									<div style="margin-left: 1em;">
 										<ul>
+											<li>C. Kim*, A. Port*, M. Patel, <a href="https://sightsound.org/papers/2021/Chelhwon_Kim_Face-to-Music_Translation.pdf"><span>"Face-to-Music Translation"</span></a>, <i>CVPR Sight and Sound Workshop</i> 2021</li>
 											<li>A. Port, C. Kim, M. Patel, <a href="https://arxiv.org/abs/2005.13291"><span>"Earballs: Neural Transmodal Translation"</span></a>, submitted to NeurIPS 2020</li>
-											<li>C. Kim, A. Port, M. Patel, <a href="https://sightsound.org/papers/2021/Chelhwon_Kim_Face-to-Music_Translation.pdf"><span>"Face-to-Music Translation"</span></a>, <i>CVPR Sight and Sound Workshop</i> 2021</li>
-											<li>A. Port, D. Cavdir, C. Kim, M. Patel, D. Kimble, "Transmodal Translation of Feature Vectors to Audio for Assistive Devices", US Patent App.16/845,443. Filed April 2020</li>
+											<li>A. Port, D. Cavdir, C. Kim, M. Patel, D. Kimble, "Transmodal Translation of Feature Vectors to Audio for Assistive Devices", <a href="https://patents.google.com/patent/US11069259B2/en?q=Transmodal+Translation+of+Feature+Vectors+to+Audio+Assistive+Devices&oq=Transmodal+Translation+of+Feature+Vectors+to+Audio+for+Assistive+Devices"><span>US Patent No. US11069259B2</span></a>, July 2021</li>
+											<li>A. Port, D. Cavdir, C. Kim, M. Patel, D. Kimble, "Transmodal Translation of Feature Vectors to Audio for Assistive Devices", <a href="https://patents.google.com/patent/JP2021056499A/en?q=Transmodal+Translation+of+Feature+Vectors+to+Audio+Assistive+Devices&oq=Transmodal+Translation+of+Feature+Vectors+to+Audio+for+Assistive+Devices"><span>JP Patent No. JP2021056499A</span></a>, Published April 2021, Pending</li>
 											<li>Recipient of the “esteemed judges’ choice” award @ 2019 FXPAL Hackathon.</li>
 										</ul>
 									</div>
@@ -345,7 +361,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 
 
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 
 
