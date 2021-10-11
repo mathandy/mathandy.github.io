@@ -33,9 +33,9 @@ body a:hover{
 p.escher {
 	text-align: center;
 	font-family: Georgia, serif;
-	font-size:1em;
-	margin-right: 5%;
-	margin-left: 5%;
+	font-size:.88em;
+	margin-right: 1%;
+	margin-left: 1%;
 
 	align-content: center;
 }
