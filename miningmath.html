@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="History-NiceHash-Scrypt-Mining-Rate">History NiceHash Scrypt Mining Rate<a class="anchor-link" href="#History-NiceHash-Scrypt-Mining-Rate">&#182;</a></h1><p><img src="https://gcdn.pbrd.co/images/JeAuBKVZuJYr.png?o=1" alt="image.png">
+<h1 id="Historic-NiceHash-Scrypt-Mining-Rate">Historic NiceHash Scrypt Mining Rate<a class="anchor-link" href="#Historic-NiceHash-Scrypt-Mining-Rate">&#182;</a></h1><p><img src="https://gcdn.pbrd.co/images/JeAuBKVZuJYr.png?o=1" alt="image.png">
 Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this seems to check out as we'll see</p>
 
 </div>
@@ -14271,7 +14271,7 @@ Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this see
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">MinerInvestment</span><span class="p">:</span>
@@ -14309,7 +14309,7 @@ Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this see
     <span class="n">title</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">miner</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">) @ </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Initial Investment: $</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">initial_investment</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;years until Return on Investment:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">roi</span><span class="p">()</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;years to recoup investment:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">roi</span><span class="p">()</span><span class="o">/</span><span class="mi">365</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; + $</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">daily_revenue</span><span class="p">(),</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">/day (Revenue)&quot;</span><span class="p">)</span>
     <span class="n">rev</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot; - $</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">daily_energy_cost</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2">/day (Cost of Electricity)&quot;</span>
@@ -14325,7 +14325,7 @@ Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this see
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># (advertised) miner params</span>
@@ -14365,7 +14365,7 @@ Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this see
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">mi</span> <span class="o">=</span> <span class="n">MinerInvestment</span><span class="p">(</span><span class="n">miner</span><span class="o">=</span><span class="n">l3pp</span><span class="p">,</span> <span class="n">environment</span><span class="o">=</span><span class="n">gordons_house</span><span class="p">,</span> <span class="n">network</span><span class="o">=</span><span class="n">nicehash_scrypt</span><span class="p">)</span>
@@ -14392,7 +14392,7 @@ Note that by BTC/TH/day I'm assuming they really mean BTC/(TH/s)/day -- this see
 <pre>Bitmain Antminer L3++ (nicehash-scrypt) @ Gordon&#39;s House
 ========================================================
 Initial Investment: $1913.55
-years until Return on Investment: 3.28
+years to recoup investment: 3.28
 ---
  + $4.48/day (Revenue)
  - $2.88/day (Cost of Electricity)
@@ -14415,7 +14415,7 @@ years until Return on Investment: 3.28
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Estimate using NiceHash&#39;s advertised average from this year and BTC = $57k</span>
@@ -14443,7 +14443,7 @@ years until Return on Investment: 3.28
 <pre>Bitmain Antminer L3++ (nicehash-scrypt) @ Gordon&#39;s House
 ========================================================
 Initial Investment: $1913.55
-years until Return on Investment: 1.02
+years to recoup investment: 1.02
 ---
  + $8.02/day (Revenue)
  - $2.88/day (Cost of Electricity)
@@ -14460,7 +14460,7 @@ years until Return on Investment: 1.02
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">mi</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">reward_per_day_per_thps</span> <span class="o">=</span> <span class="mf">0.2427</span>
@@ -14488,7 +14488,7 @@ years until Return on Investment: 1.02
 <pre>Bitmain Antminer L3++ (nicehash-scrypt) @ Gordon&#39;s House
 ========================================================
 Initial Investment: $1913.55
-years until Return on Investment: 0.78
+years to recoup investment: 0.78
 ---
  + $9.64/day (Revenue)
  - $2.88/day (Cost of Electricity)
@@ -14510,7 +14510,7 @@ years until Return on Investment: 0.78
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Estimate using NiceHash and BTC current rate</span>
@@ -14539,7 +14539,7 @@ years until Return on Investment: 0.78
 <pre>Bitmain Antminer L3++ (nicehash-scrypt) @ Gordon&#39;s House
 ========================================================
 Initial Investment: $1913.55
-years until Return on Investment: 1.05
+years to recoup investment: 1.05
 ---
  + $7.89/day (Revenue)
  - $2.88/day (Cost of Electricity)
@@ -14561,7 +14561,7 @@ years until Return on Investment: 1.05
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="n">mi</span><span class="o">.</span><span class="n">network</span><span class="o">.</span><span class="n">reward_per_day_per_thps</span> <span class="o">=</span> <span class="mf">0.2427</span>
@@ -14589,7 +14589,7 @@ years until Return on Investment: 1.05
 <pre>Bitmain Antminer L3++ (nicehash-scrypt) @ Gordon&#39;s House
 ========================================================
 Initial Investment: $1913.55
-years until Return on Investment: 0.78
+years to recoup investment: 0.78
 ---
  + $9.64/day (Revenue)
  - $2.88/day (Cost of Electricity)
