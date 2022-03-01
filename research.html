@@ -30,19 +30,12 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-		// jQuery(document).ready(function($) {
-		// 	new WOW().init();
-		// 	$(".scroll").click(function(event){
-		// 		event.preventDefault();
-		// 		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		// 	});
-		// });
 		$(document).ready(function($) {
-			new WOW().init();
-			$(".scroll").click(function(event){
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
+			// new WOW().init();
+			// $(".scroll").click(function(event){
+			// 	event.preventDefault();
+			// 	$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			// });
 
 			// open relevant accordion item if anchor is included in url
 			let url = window.location.href;
@@ -324,11 +317,11 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 <!-- //other-research -->
 
 <!-- footer -->
-<div class="footer"><a name="CONTACT"></a>
+<div class="footer">
     <div class="container">
         <div class="footer-grids">
             <div class="col-md-4 footer-grid animated wow" data-wow-delay="0s">
-                <h3>Contact</h3>
+                <h3 id="CONTACT">Contact</h3>
                 <p>aaport &isin; ucsc.edu</p>
             </div>
             <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
